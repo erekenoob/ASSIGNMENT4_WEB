@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded-bottom-4 shadow">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Assignment 4</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="task1.html">Basic Form</a></li>
+                <li class="nav-item"><a class="nav-link active" href="task2.html">Bootstrap Form</a></li>
+                <li class="nav-item"><a class="nav-link" href="task4.html">Registration</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6 bg-white p-4 rounded shadow-sm">
+            <h2 class="mb-4">Bootstrap Contact Form</h2>
+            
+            <form action="#" method="GET">
+                
+                <div class="mb-3">
+                    <label for="bsName" class="form-label">Full Name</label>
+                    <input type="text" class="form-control is-invalid" id="bsName" placeholder="Enter your full name" required>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Name is required.</div>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="bsEmail" class="form-label">Email Address</label>
+                    <input type="email" class="form-control is-invalid" id="bsEmail" placeholder="name@example.com" required>
+                    <div class="form-text">We'll never share your email with anyone else.</div>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Email is required.</div>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="bsMessage" class="form-label">Message</label>
+                    <textarea class="form-control is-invalid" id="bsMessage" rows="4" placeholder="Write your message here..." required></textarea>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Message cannot be empty.</div>
+                </div>
+                
+                <button class="btn btn-primary justify-content-center" type="submit">Submit Message</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

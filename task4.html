@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded-bottom-4 shadow">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Assignment 4</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="task1.html">Basic Form</a></li>
+                <li class="nav-item"><a class="nav-link" href="task2.html">Bootstrap Form</a></li>
+                <li class="nav-item"><a class="nav-link active" href="task4.html">Registration</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container mt-5 mb-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8 bg-white p-5 rounded shadow-sm">
+            <h2 class="mb-4 text-center">User Registration</h2>
+            
+            <form action="#" method="GET" class="was-validated">
+                
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="firstName" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="Enter first name" required>
+                        <div class="valid-feedback">OK</div>
+                        <div class="invalid-feedback">Name is required.</div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="lastName" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="Enter last name" required>
+                        <div class="valid-feedback">NEXT STEP</div>
+                        <div class="invalid-feedback">Surame is required.</div>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="regEmail" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="regEmail" placeholder="name@example.com" required>
+                    <div class="valid-feedback">NEXT STEP</div>
+                    <div class="invalid-feedback">Type a valid email.</div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" minlength="8" placeholder="Min 8 characters" required>
+                        <div class="valid-feedback">GOOD</div>
+                        <div class="invalid-feedback">Password must be at least 8 long.</div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="confirmPassword" class="form-label">Confirm Password</label>
+                        <input type="password" class="form-control" id="confirmPassword" minlength="8" placeholder="Confirm password" required>
+                        <div class="valid-feedback">OK</div>
+                        <div class="invalid-feedback">Please confirm your password.</div>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label d-block fw-bold">Gender</label>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="male" required>
+                        <label class="form-check-label" for="male">Male</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="female" required>
+                        <label class="form-check-label" for="female">Female</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="other" required>
+                        <label class="form-check-label" for="other">Other</label>
+                        <div class="invalid-feedback ms-2">Please select your gender.</div>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label d-block fw-bold">Hobbies</label>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="sport" id="hobby1" value="Sport">
+                        <label class="form-check-label" for="hobby1">Sport</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="Music" id="hobby2" value="Music">
+                        <label class="form-check-label" for="hobby2">Music</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="Cooking" id="hobby3" value="Cooking">
+                        <label class="form-check-label" for="hobby3">Cooking</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="Other" id="hobby4" value="Other">
+                        <label class="form-check-label" for="hobby4">Other</label>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <label for="country" class="form-label fw-bold">Country</label>
+                    <select class="form-select" id="country" required>
+                        <option selected disabled value="">Choose your country</option>
+                        <option value="KZ">Kazakhstan</option>
+                        <option value="US">USA</option>
+                        <option value="RU">Russia</option>
+                    </select>
+                    <div class="valid-feedback">Country selected</div>
+                    <div class="invalid-feedback">Please select a valid country.</div>
+                </div>
+
+                <div class="d-grid gap-2 d-md-block">
+                    <button class="btn btn-success" type="submit">Submit Registration</button>
+                    <button class="btn btn-secondary" type="reset">Reset</button>
+                </div>
+            </form>
+            
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
